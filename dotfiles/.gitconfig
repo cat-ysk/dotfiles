@@ -1,0 +1,28 @@
+[user]
+  name = cat-ysk
+  email = catysk777@gmail.com
+[core]
+  filemode = true
+  editor = vim
+  # 行末のLFをCRLFへ変換する (Windows用)
+  autocrlf = input
+	excludesfile = ~/.gitignore_global
+[color]
+  ui = auto
+[push]
+  default = current
+[alias]
+  br = branch
+  ci = commit
+  co = checkout
+  st = status
+  sh = show
+  sb = show-branch
+  df = diff
+  l = log
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
